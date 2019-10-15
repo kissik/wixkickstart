@@ -16,14 +16,14 @@ function solution(str, ln){
 			cnt++;
 			sms = arr[s].length;
 		}
-		console.log("'" + arr[s] + "' in sms No " + (cnt + 1) + " total amount of symbols = " + sms);
+		//console.log("'" + arr[s] + "' in sms No " + (cnt + 1) + " total amount of symbols = " + sms);
 	}
 		
 	return (cnt + 1);
 };
 
 try{
-	console.log("min sms count = " + solution(process.argv[2], process.argv[3]));
+	console.log(solution(process.argv[2], process.argv[3]));
 }
 catch(e){
 	console.log("Someting went wrong (((((");
